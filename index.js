@@ -14,4 +14,4 @@ app.get('/scrape', async (req, res, next) => {
 	res.json(mediumArticles);
 });
 
-app.listen();
+app.listen(2072);
