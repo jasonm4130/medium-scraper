@@ -5,6 +5,7 @@ import {
 } from './lib/scraper';
 
 const app = express();
+const port = 2765;
 
 app.get('/scrape', async (req, res, next) => {
 	console.log('Scraping!');
@@ -14,4 +15,4 @@ app.get('/scrape', async (req, res, next) => {
 	res.json(mediumArticles);
 });
 
-app.listen(2072);
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
