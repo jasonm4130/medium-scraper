@@ -14,4 +14,4 @@ app.get('/scrape', async (req, res, next) => {
 	res.json(mediumArticles);
 });
 
-app.listen(2720, () => console.log(`Scraper running on port 2720`));
+app.listen();
